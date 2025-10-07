@@ -1,0 +1,95 @@
+{
+  "source_file": "grass-tileset.png",
+  "sprites": [
+    {
+      "col": 7,
+      "name": "path-cross",
+      "row": 1
+    },
+    {
+      "col": 0,
+      "name": "path-b-r",
+      "row": 0
+    },
+    {
+      "col": 9,
+      "name": "grass-1",
+      "row": 1
+    },
+    {
+      "col": 10,
+      "name": "grass-2",
+      "row": 1
+    },
+    {
+      "col": 9,
+      "name": "grass-3",
+      "row": 2
+    },
+    {
+      "col": 1,
+      "name": "path-hor",
+      "row": 0
+    },
+    {
+      "col": 2,
+      "name": "path-vert",
+      "row": 1
+    },
+    {
+      "col": 2,
+      "name": "path-l-b",
+      "row": 0
+    },
+    {
+      "col": 2,
+      "name": "path-t-l",
+      "row": 2
+    },
+    {
+      "col": 0,
+      "name": "path-t-r",
+      "row": 2
+    },
+    {
+      "col": 3,
+      "name": "path-cap-l",
+      "row": 1
+    },
+    {
+      "col": 4,
+      "name": "path-cap-t",
+      "row": 0
+    },
+    {
+      "col": 5,
+      "name": "path-cap-r",
+      "row": 1
+    },
+    {
+      "col": 4,
+      "name": "path-cap-b",
+      "row": 2
+    },
+    {
+      "col": 6,
+      "name": "left-t",
+      "row": 1
+    },
+    {
+      "col": 8,
+      "name": "right-t",
+      "row": 1
+    },
+    {
+      "col": 7,
+      "name": "top-t",
+      "row": 0
+    },
+    {
+      "col": 7,
+      "name": "bottom-t",
+      "row": 2
+    }
+  ]
+}

@@ -1,0 +1,1944 @@
+{
+  "level": 2,
+  "textures": [
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ]
+  ],
+  "caves": [],
+  "paths": [
+    {
+      "id": "path-1",
+      "type": "hard",
+      "segments": [
+        {
+          "cell": {
+            "row": 3,
+            "col": 0
+          }
+        },
+        {
+          "cell": {
+            "row": 3,
+            "col": 3
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 3
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 7
+          }
+        },
+        {
+          "cell": {
+            "row": 4,
+            "col": 11
+          }
+        },
+        {
+          "cell": {
+            "row": 4,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 14
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 14
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 19
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 19
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 21
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 21
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 24
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 24
+          }
+        },
+        {
+          "cell": {
+            "row": 4,
+            "col": 26
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 26
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 23
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 22
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 21
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 20
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 19
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 15
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 12
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 11
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 8
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 4
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 2
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "path-2",
+      "type": "hard",
+      "segments": [
+        {
+          "cell": {
+            "row": 7,
+            "col": 0
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 3
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 5
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 7
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 10
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 14
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 19
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 20
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 21
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 22
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 24
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 26
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 26
+          }
+        }
+      ]
+    }
+  ],
+  "non_placeable_areas": [],
+  "waves": [
+    {
+      "spawns": [
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 500,
+          "delay": 1000,
+          "time_betwixt": 3000,
+          "path_id": "path-1"
+        },
+        {
+          "type": "BAT",
+          "hp": 450,
+          "delay": 5000,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 500,
+          "delay": 0,
+          "time_betwixt": 0,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 500,
+          "delay": 4000,
+          "time_betwixt": 4321,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 1050,
+          "delay": 2000,
+          "time_betwixt": 2345,
+          "path_id": "path-1"
+        },
+        {
+          "type": "BAT",
+          "hp": 500,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "ORC",
+          "hp": 500,
+          "delay": 0,
+          "time_betwixt": 4321,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC",
+          "hp": 700,
+          "delay": 3000,
+          "time_betwixt": 2222,
+          "path_id": "path-1"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 1200,
+          "delay": 5000,
+          "time_betwixt": 5555,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 400,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 1400,
+          "delay": 0,
+          "time_betwixt": 2345,
+          "path_id": "path-1"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 1000,
+          "delay": 0,
+          "time_betwixt": 4321,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1000,
+          "delay": 4000,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 1000,
+          "delay": 0,
+          "time_betwixt": 2345,
+          "path_id": "path-1"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 1000,
+          "delay": 0,
+          "time_betwixt": 2342,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 750,
+          "delay": 0,
+          "time_betwixt": 3211,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1050,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 1540,
+          "delay": 0,
+          "time_betwixt": 3000,
+          "path_id": "path-1"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 1540,
+          "delay": 0,
+          "time_betwixt": 2000,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 1500,
+          "delay": 0,
+          "time_betwixt": 4321,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1050,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 2450,
+          "delay": 0,
+          "time_betwixt": 4321,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 3000,
+          "delay": 0,
+          "time_betwixt": 0,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1050,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 2450,
+          "delay": 0,
+          "time_betwixt": 3453,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 1540,
+          "delay": 0,
+          "time_betwixt": 3444,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 5250,
+          "delay": 0,
+          "time_betwixt": 3333,
+          "path_id": "path-1"
+        }
+      ]
+    }
+  ],
+  "decorations": [
+    {
+      "name": "cave-right",
+      "cell": {
+        "row": 3,
+        "col": 0
+      }
+    }
+  ]
+}

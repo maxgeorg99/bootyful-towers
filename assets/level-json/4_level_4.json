@@ -1,0 +1,2102 @@
+{
+  "level": 4,
+  "textures": [
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ]
+  ],
+  "caves": [],
+  "paths": [
+    {
+      "id": "path-1",
+      "type": "hard",
+      "segments": [
+        {
+          "cell": {
+            "row": 2,
+            "col": 0
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 4
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 4
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 8
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 8
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 3,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 3,
+            "col": 17
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 17
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 21
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 21
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 25
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 25
+          }
+        },
+        {
+          "cell": {
+            "row": 2,
+            "col": 27
+          }
+        }
+      ]
+    },
+    {
+      "id": "path-2",
+      "type": "hard",
+      "segments": [
+        {
+          "cell": {
+            "row": 7,
+            "col": 0
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 1
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 3
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 3
+          }
+        },
+        {
+          "cell": {
+            "row": 10,
+            "col": 5
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 7
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 4
+          }
+        },
+        {
+          "cell": {
+            "row": 5,
+            "col": 6
+          }
+        },
+        {
+          "cell": {
+            "row": 5,
+            "col": 8
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 10
+          }
+        },
+        {
+          "cell": {
+            "row": 11,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 11,
+            "col": 15
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 15
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 13
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 15
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 17
+          }
+        },
+        {
+          "cell": {
+            "row": 9,
+            "col": 17
+          }
+        },
+        {
+          "cell": {
+            "row": 10,
+            "col": 19
+          }
+        },
+        {
+          "cell": {
+            "row": 10,
+            "col": 22
+          }
+        },
+        {
+          "cell": {
+            "row": 8,
+            "col": 22
+          }
+        },
+        {
+          "cell": {
+            "row": 6,
+            "col": 20
+          }
+        },
+        {
+          "cell": {
+            "row": 5,
+            "col": 21
+          }
+        },
+        {
+          "cell": {
+            "row": 5,
+            "col": 23
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 25
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 26
+          }
+        }
+      ]
+    }
+  ],
+  "non_placeable_areas": [],
+  "waves": [
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1200,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 10000,
+          "delay": 400,
+          "time_betwixt": 1700,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 11000,
+          "delay": 800,
+          "time_betwixt": 2200,
+          "path_id": "path-1"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 8000,
+          "delay": 1200,
+          "time_betwixt": 2800,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC",
+          "hp": 9000,
+          "delay": 1600,
+          "time_betwixt": 2400,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1500,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 12000,
+          "delay": 300,
+          "time_betwixt": 1500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 16000,
+          "delay": 600,
+          "time_betwixt": 2000,
+          "path_id": "path-2"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 13000,
+          "delay": 900,
+          "time_betwixt": 1800,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 14000,
+          "delay": 1200,
+          "time_betwixt": 2100,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WYVERN",
+          "hp": 10000,
+          "delay": 1500,
+          "time_betwixt": 3000,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1800,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 20000,
+          "delay": 300,
+          "time_betwixt": 1800,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 15000,
+          "delay": 500,
+          "time_betwixt": 1600,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 17000,
+          "delay": 800,
+          "time_betwixt": 2000,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 25000,
+          "delay": 1500,
+          "time_betwixt": 0,
+          "path_id": "path-1"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 12000,
+          "delay": 2000,
+          "time_betwixt": 3200,
+          "path_id": "path-2"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 14000,
+          "delay": 2500,
+          "time_betwixt": 2200,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 2000,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 24000,
+          "delay": 250,
+          "time_betwixt": 2300,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 26000,
+          "delay": 500,
+          "time_betwixt": 2100,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 25000,
+          "delay": 750,
+          "time_betwixt": 2400,
+          "path_id": "path-1"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 23000,
+          "delay": 1000,
+          "time_betwixt": 3000,
+          "path_id": "path-2"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 2200,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 26000,
+          "delay": 200,
+          "time_betwixt": 2000,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC",
+          "hp": 28000,
+          "delay": 400,
+          "time_betwixt": 2200,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 27000,
+          "delay": 600,
+          "time_betwixt": 2400,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WYVERN",
+          "hp": 30000,
+          "delay": 800,
+          "time_betwixt": 3400,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 2400,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 28000,
+          "delay": 150,
+          "time_betwixt": 2400,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 30000,
+          "delay": 300,
+          "time_betwixt": 2300,
+          "path_id": "path-2"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 28000,
+          "delay": 450,
+          "time_betwixt": 3100,
+          "path_id": "path-1"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 27000,
+          "delay": 600,
+          "time_betwixt": 2100,
+          "path_id": "path-2"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 2500,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 32000,
+          "delay": 150,
+          "time_betwixt": 2500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 33000,
+          "delay": 300,
+          "time_betwixt": 2600,
+          "path_id": "path-1"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 30000,
+          "delay": 450,
+          "time_betwixt": 2400,
+          "path_id": "path-2"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 31000,
+          "delay": 600,
+          "time_betwixt": 3200,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 2600,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 32000,
+          "delay": 100,
+          "time_betwixt": 2700,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 35000,
+          "delay": 200,
+          "time_betwixt": 2600,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 34000,
+          "delay": 300,
+          "time_betwixt": 2800,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WYVERN",
+          "hp": 36000,
+          "delay": 400,
+          "time_betwixt": 3600,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 38000,
+          "delay": 500,
+          "time_betwixt": 0,
+          "path_id": "path-1"
+        }
+      ]
+    }
+  ],
+  "decorations": [
+    {
+      "name": "water-tower",
+      "cell": {
+        "row": 2,
+        "col": 26
+      }
+    },
+    {
+      "name": "water-tower",
+      "cell": {
+        "row": 7,
+        "col": 26
+      }
+    },
+    {
+      "name": "cave-right",
+      "cell": {
+        "row": 2,
+        "col": 0
+      }
+    },
+    {
+      "name": "cave-right",
+      "cell": {
+        "row": 7,
+        "col": 0
+      }
+    }
+  ]
+}

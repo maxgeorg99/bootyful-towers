@@ -1,0 +1,155 @@
+{
+  "sprites": [
+    {
+      "row": 0,
+      "name": "v-0-0",
+      "col": 0
+    },
+    {
+      "row": 0,
+      "name": "v-01",
+      "col": 1
+    },
+    {
+      "row": 0,
+      "name": "v-02",
+      "col": 2
+    },
+    {
+      "row": 1,
+      "name": "v-03",
+      "col": 2
+    },
+    {
+      "row": 2,
+      "name": "v-04",
+      "col": 2
+    },
+    {
+      "row": 2,
+      "name": "v-05",
+      "col": 0
+    },
+    {
+      "row": 1,
+      "name": "v-06",
+      "col": 4
+    },
+    {
+      "row": 2,
+      "name": "v-07",
+      "col": 4
+    },
+    {
+      "row": 1,
+      "name": "v-08",
+      "col": 3
+    },
+    {
+      "row": 1,
+      "name": "v-08",
+      "col": 5
+    },
+    {
+      "row": 0,
+      "name": "c-09",
+      "col": 4
+    },
+    {
+      "row": 0,
+      "name": "v10",
+      "col": 6
+    },
+    {
+      "row": 2,
+      "name": "v11",
+      "col": 6
+    },
+    {
+      "row": 2,
+      "name": "v12",
+      "col": 7
+    },
+    {
+      "row": 2,
+      "name": "v13",
+      "col": 8
+    },
+    {
+      "row": 1,
+      "name": "v14",
+      "col": 8
+    },
+    {
+      "row": 1,
+      "name": "v15",
+      "col": 7
+    },
+    {
+      "row": 1,
+      "name": "v16",
+      "col": 6
+    },
+    {
+      "row": 0,
+      "name": "v17",
+      "col": 7
+    },
+    {
+      "row": 0,
+      "name": "v18",
+      "col": 8
+    },
+    {
+      "row": 3,
+      "name": "v19",
+      "col": 0
+    },
+    {
+      "row": 3,
+      "name": "v20",
+      "col": 1
+    },
+    {
+      "row": 3,
+      "name": "v14v",
+      "col": 2
+    },
+    {
+      "row": 3,
+      "name": "v15v",
+      "col": 3
+    },
+    {
+      "row": 2,
+      "name": "v55",
+      "col": 9
+    },
+    {
+      "row": 1,
+      "name": "v51",
+      "col": 9
+    },
+    {
+      "row": 0,
+      "name": "v52",
+      "col": 9
+    },
+    {
+      "row": 1,
+      "name": "v52",
+      "col": 10
+    },
+    {
+      "row": 0,
+      "name": "v54",
+      "col": 10
+    },
+    {
+      "row": 6,
+      "name": "vb",
+      "col": 4
+    }
+  ],
+  "source_file": "volcano-tileset.png"
+}

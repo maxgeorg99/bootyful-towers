@@ -1,0 +1,121 @@
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform float u_intensity = 0.9;
+uniform vec2 u_mouse ;
+uniform float u_mouse_sensitivity = 0.5; // Add this at the top
+
+
+float easeInSine(float x) {
+  return 1 - cos((x * 3.14159) / 2);
+}
+
+vec4 effect(vec4 color, Image texture, vec2 texCoords, vec2 screenCoords) {
+
+    vec4 baseColor = Texel(texture, texCoords);
+    if (u_mouse.x < 0.0) {
+      return vec4(baseColor.rgb, baseColor.a);
+    }
+
+    float diagonal = texCoords.x + texCoords.y;
+    float speed = 2.0;
+
+    // Add time-based randomness to spacing and positions
+    float timeVar1 = sin(u_time * 0.4) * 0.2;
+    float timeVar2 = cos(u_time * 0.3) * 0.2;
+    float timeVar3 = sin(u_time * 0.5 + 1.5) * 0.2;
+
+    // Calculate three band positions with slightly randomized spacing
+    float baseSpacing = 0.67; // Base spacing between bands (2.0/3)
+    float spacing1 = baseSpacing * (1.0 + timeVar1 * 0.2);
+    float spacing2 = baseSpacing * (1.0 + timeVar2 * 0.2);
+
+    // float bandPosition1 = mod(diagonal - u_mouse.x * 1.5 + timeVar1, 2.0);
+float bandPosition1 = mod(diagonal - u_mouse.x * u_mouse_sensitivity + timeVar1, 2.0);
+    float bandPosition2 = mod(diagonal - u_mouse.x * 1.5 + spacing1 + timeVar2, 2.0);
+    float bandPosition3 = mod(diagonal - u_mouse.x * 1.5 + spacing1 + spacing2 + timeVar3, 2.0);
+
+    // Slightly randomize band widths
+    float bandWidth = 0.1 + easeInSine(u_mouse.y) * 0.35;
+    float bandWidth1 = bandWidth * (1.0 + timeVar1 * 0.15);
+    float bandWidth2 = bandWidth * (1.0 + timeVar2 * 0.15);
+    float bandWidth3 = bandWidth * (1.0 + timeVar3 * 0.15);
+
+    // Calculate shine for each band with their individual widths
+    float shine1 = smoothstep(-bandWidth1, 0.0, bandPosition1) * smoothstep(bandWidth1, 0.0, bandPosition1);
+    float shine2 = smoothstep(-bandWidth2, 0.0, bandPosition2) * smoothstep(bandWidth2, 0.0, bandPosition2);
+    float shine3 = smoothstep(-bandWidth3, 0.0, bandPosition3) * smoothstep(bandWidth3, 0.0, bandPosition3);
+
+    // Can set different colors for each band, these numbers suck right now. Can change for all rgbs, and alpha, etc
+    vec3 shine1color = vec3(sin(u_time + 0) * 0.8, 1.0, 1.2);
+    vec3 shine2color = vec3(sin(u_time + 1) * 0.8, 1.0, 1.2);
+    vec3 shine3color = vec3(sin(u_time + 2) * 0.8, 1.0, 1.2);
+
+    // Combine all three shine effects
+    vec3 shine = shine1 * shine1color + shine2 * shine2color + shine3 * shine3color;
+
+    float brightness = dot(baseColor.rgb, vec3(0.299, 0.587, 0.114));
+    vec3 finalShine = shine * u_intensity * brightness;
+
+    float shineMask = step(0.2, brightness);
+    finalShine *= shineMask;
+
+    return vec4(baseColor.rgb + finalShine, baseColor.a);
+}
+
+vec4 position(mat4 transform_projection, vec4 vertex_position)
+{
+  if (u_mouse.x < 0.0) {
+    return transform_projection * vertex_position;
+  }
+
+  // Temporary usage to prevent warnings
+  vec2 temp = u_resolution * 0.0;
+
+  // Remove wobble completely to keep it centered
+  float mouseOffsetX = 0.1;
+  float mouseOffsetY = 0.1;
+
+  // Deduce boundary center from resolution (resolution = boundary size)
+  vec2 boundaryCenter = u_resolution / 2.0;
+  float x = vertex_position.x - boundaryCenter.x;
+  float y = vertex_position.y - boundaryCenter.y;
+
+  // Calculate distance from center for scaling
+  float distFromCenter = distance(u_mouse, vec2(0.5, 0.5)) * 2.0;
+  distFromCenter = min(distFromCenter, 1.0);
+
+  // Scale effect
+  float maxScale = 1.8; // Adjust as needed
+  float scale = mix(maxScale, 1.0, 1.0);
+
+  // Apply scale before rotations
+  x *= scale;
+  y *= scale;
+
+  // Tilt effects
+  float tiltStrength = 0.04;
+  float tiltX = -(u_mouse.y - 0.5) * tiltStrength;
+  float tiltY = (u_mouse.x - 0.5) * tiltStrength;
+
+  // Apply rotations
+  float z = 0.0;
+  float cosX = cos(tiltX);
+  float sinX = sin(tiltX);
+  float y2 = y * cosX - z * sinX;
+  float z2 = y * sinX + z * cosX;
+
+  float cosY = cos(tiltY);
+  float sinY = sin(tiltY);
+  float x3 = x * cosY + z2 * sinY;
+  float z3 = -x * sinY + z2 * cosY;
+
+  float perspective = 1.0 + z3 * 0.001;
+  x3 = x3 * perspective;
+  y2 = y2 * perspective;
+
+  // Transform back using deduced boundary center
+  vertex_position.x = x3 + boundaryCenter.x + mouseOffsetX + temp.x;
+  vertex_position.y = y2 + boundaryCenter.y + mouseOffsetY + temp.y;
+
+  return transform_projection * vertex_position;
+}

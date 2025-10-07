@@ -1,0 +1,1908 @@
+{
+  "level": 3,
+  "textures": [
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "tile": "path",
+        "row": 0,
+        "col": 0
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ],
+    [
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      },
+      {
+        "tile": "empty"
+      }
+    ]
+  ],
+  "caves": [],
+  "paths": [
+    {
+      "id": "path-1",
+      "type": "hard",
+      "segments": [
+        {
+          "cell": {
+            "row": 4,
+            "col": 0
+          }
+        },
+        {
+          "cell": {
+            "row": 4,
+            "col": 9
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 9
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 6
+          }
+        },
+        {
+          "cell": {
+            "row": 10,
+            "col": 6
+          }
+        },
+        {
+          "cell": {
+            "row": 10,
+            "col": 19
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 19
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 26
+          }
+        }
+      ]
+    },
+    {
+      "id": "path-2",
+      "type": "hard",
+      "segments": [
+        {
+          "cell": {
+            "row": 7,
+            "col": 0
+          }
+        },
+        {
+          "cell": {
+            "row": 7,
+            "col": 15
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 15
+          }
+        },
+        {
+          "cell": {
+            "row": 1,
+            "col": 12
+          }
+        },
+        {
+          "cell": {
+            "row": 4,
+            "col": 12
+          }
+        },
+        {
+          "cell": {
+            "row": 4,
+            "col": 22
+          }
+        },
+        {
+          "cell": {
+            "row": 10,
+            "col": 22
+          }
+        },
+        {
+          "cell": {
+            "row": 10,
+            "col": 26
+          }
+        }
+      ]
+    }
+  ],
+  "non_placeable_areas": [],
+  "waves": [
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 500,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 1000,
+          "delay": 2000,
+          "time_betwixt": 4000,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 1000,
+          "delay": 1000,
+          "time_betwixt": 2500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 1000,
+          "delay": 4000,
+          "time_betwixt": 9000,
+          "path_id": "path-2"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 800,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 1000,
+          "delay": 300,
+          "time_betwixt": 1600,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 1000,
+          "delay": 800,
+          "time_betwixt": 2200,
+          "path_id": "path-2"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 1000,
+          "delay": 1200,
+          "time_betwixt": 2000,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 1000,
+          "delay": 1600,
+          "time_betwixt": 2400,
+          "path_id": "path-2"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 900,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 1150,
+          "delay": 400,
+          "time_betwixt": 2000,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 1500,
+          "delay": 600,
+          "time_betwixt": 1800,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 1000,
+          "delay": 1000,
+          "time_betwixt": 2200,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 4000,
+          "delay": 2000,
+          "time_betwixt": 0,
+          "path_id": "path-1"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 1000,
+          "delay": 2500,
+          "time_betwixt": 3500,
+          "path_id": "path-2"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1000,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 1400,
+          "delay": 300,
+          "time_betwixt": 2400,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 1500,
+          "delay": 600,
+          "time_betwixt": 2200,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 1000,
+          "delay": 900,
+          "time_betwixt": 2600,
+          "path_id": "path-1"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 1000,
+          "delay": 1200,
+          "time_betwixt": 3200,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 4000,
+          "delay": 0,
+          "time_betwixt": 0,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1200,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 1500,
+          "delay": 250,
+          "time_betwixt": 2100,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC",
+          "hp": 1600,
+          "delay": 500,
+          "time_betwixt": 2300,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WOLF",
+          "hp": 1700,
+          "delay": 750,
+          "time_betwixt": 2500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WYVERN",
+          "hp": 1800,
+          "delay": 1000,
+          "time_betwixt": 3500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 4000,
+          "delay": 5000,
+          "time_betwixt": 2345,
+          "path_id": "path-2"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1300,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 1600,
+          "delay": 200,
+          "time_betwixt": 2500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 1800,
+          "delay": 400,
+          "time_betwixt": 2400,
+          "path_id": "path-2"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 1700,
+          "delay": 600,
+          "time_betwixt": 3300,
+          "path_id": "path-1"
+        },
+        {
+          "type": "MINE_GOBLIN",
+          "hp": 1600,
+          "delay": 800,
+          "time_betwixt": 2200,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 5000,
+          "delay": 0,
+          "time_betwixt": 5555,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 1400,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 1900,
+          "delay": 200,
+          "time_betwixt": 2600,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 2000,
+          "delay": 400,
+          "time_betwixt": 2700,
+          "path_id": "path-1"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 1700,
+          "delay": 600,
+          "time_betwixt": 2500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "SNAIL",
+          "hp": 1800,
+          "delay": 800,
+          "time_betwixt": 3400,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 5000,
+          "delay": 0,
+          "time_betwixt": 3234,
+          "path_id": "path-1"
+        }
+      ]
+    },
+    {
+      "spawns": [
+        {
+          "type": "BAT",
+          "hp": 15000,
+          "delay": 0,
+          "time_betwixt": 500,
+          "path_id": "path-2"
+        },
+        {
+          "type": "GOBLIN",
+          "hp": 18000,
+          "delay": 150,
+          "time_betwixt": 2800,
+          "path_id": "path-1"
+        },
+        {
+          "type": "ORC",
+          "hp": 21000,
+          "delay": 300,
+          "time_betwixt": 2700,
+          "path_id": "path-2"
+        },
+        {
+          "type": "WOLF",
+          "hp": 20000,
+          "delay": 450,
+          "time_betwixt": 2900,
+          "path_id": "path-1"
+        },
+        {
+          "type": "WYVERN",
+          "hp": 22000,
+          "delay": 600,
+          "time_betwixt": 3800,
+          "path_id": "path-2"
+        },
+        {
+          "type": "ORC_SHAMAN",
+          "hp": 24000,
+          "delay": 800,
+          "time_betwixt": 0,
+          "path_id": "path-1"
+        }
+      ]
+    }
+  ],
+  "decorations": []
+}
