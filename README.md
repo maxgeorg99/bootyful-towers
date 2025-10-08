@@ -18,6 +18,9 @@ This is in the shape of a game, and I can even possibly see a fun game in here,
 but its still very rough.  This is early development and should be understood
 that way.  If the game breaks, sorry :)
 
+## WARNING AGAIN
+Do not make a PR, i'll just close it or ignore it.
+
 ## How to play
 1. Install Love2D
 1. Clone this repo
