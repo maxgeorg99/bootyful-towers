@@ -93,7 +93,7 @@ function main_menu:enter()
   }
   gear_btn.z = Z.MAX
 
-  -- Bottom right corner buttons
+  -- Bottom right corner button
   local settings_btn = ButtonElement.new {
     on_click = function()
       local PauseAction = require "vibes.action.pause"
@@ -105,26 +105,13 @@ function main_menu:enter()
     label = "Settings",
     interactable = true,
     box = Box.from(
-      Config.window_size.width - (button_width * 2) - button_spacing - 50,
-      Config.window_size.height - button_height - 50,
-      button_width,
-      button_height
-    ),
-  }
-  settings_btn.z = Z.MAX
-
-  local credit_btn = ButtonElement.new {
-    on_click = function() State.mode = GameModes.CREDITS end,
-    label = "Credits",
-    interactable = true,
-    box = Box.from(
       Config.window_size.width - button_width - 50,
       Config.window_size.height - button_height - 50,
       button_width,
       button_height
     ),
   }
-  credit_btn.z = Z.MAX
+  settings_btn.z = Z.MAX
 
   local layout = Layout.new {
     name = "MainMenu(Layout)",
@@ -158,7 +145,6 @@ function main_menu:enter()
 
   self.ui:append_child(layout)
   self.ui:append_child(settings_btn)
-  self.ui:append_child(credit_btn)
 
   -- Default focus: Play
   self._buttons = {
@@ -167,7 +153,6 @@ function main_menu:enter()
     enemy_viewer_btn,
     gear_btn,
     settings_btn,
-    credit_btn,
   }
 
   UI:focus_element(play_btn)

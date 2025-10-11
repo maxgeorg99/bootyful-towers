@@ -7,7 +7,6 @@ local ModeName = {
   GAME = "vibes.modes.game",
   SHOP = "vibes.modes.shop",
   BEAT_GAME = "vibes.modes.beat-game",
-  CREDITS = "vibes.modes.credits",
   GAME_OVER = "vibes.modes.game-over",
   GEAR_MENU = "vibes.modes.gear-menu",
   CARD_COLLECTION = "vibes.modes.card-collection",

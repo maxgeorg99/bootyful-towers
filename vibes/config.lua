@@ -26,7 +26,7 @@ local tower = {
 --- @field height number
 --- @field scissor {x:number, y:number, width:number, height:number}
 local window_size = {
-  mode = WindowMode.Windowed,
+  mode = WindowMode.Fullscreen,
   width = 1920,
   height = 1080,
   scissor = { x = 0, y = 0, width = 1920, height = 1080 },
@@ -310,7 +310,8 @@ end
 function Config:set_window_settings(mode)
   local _, _, flags = love.window:getMode()
   if mode == WindowMode.Windowed then
-    love.window.setMode(window_size.width, window_size.height, {
+    -- Use smaller window size for windowed mode (1600x900 instead of full rendering res)
+    love.window.setMode(1600, 900, {
       fullscreen = false,
       borderless = false,
       centered = true,

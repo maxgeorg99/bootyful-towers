@@ -139,10 +139,12 @@ function love.load(arg)
   WINDOW_STATUS.height = Config.window_size.height
 
   local width, height = love.graphics.getDimensions()
+  -- Use fullscreen by default on first launch, unless in development mode
+  local should_be_fullscreen = PRODUCTION or (Config.window_size.mode == "fullscreen")
   love.window.setMode(width, height, {
     resizable = not PRODUCTION,
     borderless = not PRODUCTION,
-    fullscreen = PRODUCTION,
+    fullscreen = should_be_fullscreen,
   })
 
   -- added to specify display to load on (for debugging)

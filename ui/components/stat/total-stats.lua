@@ -138,12 +138,12 @@ function TotalStatsElement:_layout()
     els = {
       Button.new {
         box = Box.new(Position.new(0, 0), stat_value, label_height),
-        label = "Main Menu",
+        draw = "Main Menu",
         on_click = self.on_main_menu,
       },
       Button.new {
         box = Box.new(Position.new(0, 0), stat_value, label_height),
-        label = "New Game",
+        draw = "New Game",
         on_click = self.on_new_game,
       },
     },

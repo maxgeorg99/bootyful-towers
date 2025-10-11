@@ -2,8 +2,8 @@
 function love.conf(t)
   t.title = "Towers of Mordoria"
   t.version = "11.4" -- The LÖVE version this game was made for
-  t.window.width = 1920
-  t.window.height = 1080
+  t.window.width = 1600
+  t.window.height = 900
   t.window.resizable = false
   t.window.vsync = true
 
