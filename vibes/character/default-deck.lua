@@ -69,7 +69,36 @@ default_decks[CharacterKind.BLACKSMITH] = function()
 end
 
 -- default_decks[CharacterKind.BLACKSMITH] = function() return Deck.new() end
-default_decks[CharacterKind.MAGE] = function() return Deck.new() end
+
+default_decks[CharacterKind.MAGE] = function()
+  local deck = Deck.new()
+
+  -- Fire and elemental towers
+  local EmberWatch = require "vibes.card.card-tower-emberwatch"
+  deck:add_card(EmberWatch.new { rarity = Rarity.COMMON })
+  deck:add_card(EmberWatch.new { rarity = Rarity.COMMON })
+  deck:add_card(EmberWatch.new { rarity = Rarity.COMMON })
+
+  local Lightning = require "vibes.card.card-tower-lightning"
+  deck:add_card(Lightning.new { rarity = Rarity.UNCOMMON })
+
+  local Earth = require "vibes.card.card-tower-earth"
+  deck:add_card(Earth.new { rarity = Rarity.COMMON })
+
+  -- Fire-themed enhancement
+  local BurndownCard = require "vibes.card.enhancement.burndown"
+  deck:add_card(BurndownCard.new())
+
+  -- General magic enhancements
+  deck:add_card(DamageCard.new { rarity = Rarity.UNCOMMON })
+  deck:add_card(DamageCard.new { rarity = Rarity.UNCOMMON })
+  deck:add_card(RangeCard.new { rarity = Rarity.UNCOMMON })
+  deck:add_card(RangeCard.new { rarity = Rarity.UNCOMMON })
+  deck:add_card(AttackSpeedCard.new { rarity = Rarity.UNCOMMON })
+
+  return deck
+end
+
 default_decks[CharacterKind.FUTURIST] = function() return Deck.new() end
 
 return default_decks

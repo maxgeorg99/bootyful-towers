@@ -27,7 +27,7 @@ function Portrait:init(box)
   self.scale = scale
   self.hud_texture = Asset.sprites.player_hud
   self.hud_zero_energy_texture = Asset.sprites.player_hud_zero_energy
-  self.portrait_texture = Asset.sprites.player_hud_portrait_default
+  self.portrait_texture = State:get_character_sprite()
 
   -- Position discard icon relative to the scaled portrait size
   local scaled_width = asset_width * scale

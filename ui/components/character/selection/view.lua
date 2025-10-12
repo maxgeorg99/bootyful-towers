@@ -153,10 +153,7 @@ function CharacterSelectionView:init(opts)
         avatar = character.avatar,
         selected = idx == 1,
         callback = function()
-          if
-            character.kind == CharacterKind.MAGE
-            or character.kind == CharacterKind.FUTURIST
-          then
+          if character.kind == CharacterKind.FUTURIST then
             self.action_button.label = "Coming Soon"
             self.action_button:set_interactable(false)
             self.action_button:set_opacity(0.5)

@@ -36,7 +36,7 @@ function Hud:_setup(box)
       45 * SCALE
     ),
     scale_style = "fill",
-    texture = Asset.sprites.player_hud_portrait_default,
+    texture = State:get_character_sprite(),
   }
 
   local hud_asset = ScaledImage.new {

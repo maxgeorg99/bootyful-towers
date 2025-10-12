@@ -120,8 +120,8 @@ function GameState.new()
     characters = {
       Character.new {
         kind = CharacterKind.BLACKSMITH,
-        name = "Blacksmith",
-        description = "The Blacksmith excels at enhancing his cards and creating the ultimate weapons of Mordorian Destruction.",
+        name = "Til",
+        description = "Til, the blacksmith excels at enhancing his cards and creating the ultimate weapons.",
         avatar = {
           full = Asset.sprites.blacksmith_character_full,
           thumbnail = Asset.sprites.blacksmith_character_full,
@@ -135,8 +135,8 @@ function GameState.new()
       },
       Character.new {
         kind = CharacterKind.MAGE,
-        name = "Mage",
-        description = "NOT YET IMPLEMENTED",
+        name = "Claudia",
+        description = "Claudia, the magician casts powerful spells to defeat her enemies.",
         avatar = {
           full = Asset.sprites.mage_character_full,
           thumbnail = Asset.sprites.mage_character_full,
@@ -144,13 +144,13 @@ function GameState.new()
         },
         starter = {
           deck = require("vibes.character.default-deck")[CharacterKind.MAGE](),
-          energy = 0,
-          gold = 0,
+          energy = 5,
+          gold = 100,
         },
       },
       Character.new {
         kind = CharacterKind.FUTURIST,
-        name = "Futurist",
+        name = "Marc",
         description = "NOT YET IMPLEMENTED",
         avatar = {
           full = Asset.sprites.futurist_character_full,
