@@ -5,7 +5,6 @@ local EnemyOrc = require "vibes.enemy.enemy-orc"
 local EnemyOrcChief = require "vibes.enemy.enemy-orc-chief"
 local EnemyOrca = require "vibes.enemy.enemy-boss-orca"
 local EnemySnail = require "vibes.enemy.enemy-elite-snail"
-local EnemyViewer = require "ui.components.enemy-viewer"
 local EnemyWyvern = require "vibes.enemy.enemy-boss-wyvern"
 local GameModes = require "vibes.enum.mode-name"
 local Level = require "vibes.level"
@@ -53,7 +52,7 @@ function main_menu:enter()
     z = Z.MAX,
   }
 
-  -- Viewer row: Three viewer buttons
+  -- Viewer row: Two viewer buttons (Enemy Viewer removed)
   local collection_btn = ButtonElement.new {
     on_click = function() State.mode = GameModes.CARD_COLLECTION end,
     label = "Card Collection",
@@ -62,30 +61,12 @@ function main_menu:enter()
   }
   collection_btn.z = Z.MAX
 
-  local enemy_viewer_btn = ButtonElement.new {
-    on_click = function()
-      print "[DEBUG] MainMenu - Enemy Viewer button clicked"
-      local viewer = EnemyViewer.new()
-      print "[DEBUG] MainMenu - Enemy Viewer created, adding to UI.root"
-      UI.root:append_child(viewer)
-    end,
-    label = "Enemy Viewer",
-    interactable = true,
-    box = Box.from(
-      start_x + button_width + button_spacing,
-      viewer_row_y,
-      button_width,
-      button_height
-    ),
-  }
-  enemy_viewer_btn.z = Z.MAX
-
   local gear_btn = ButtonElement.new {
     on_click = function() State.mode = GameModes.GEAR_MENU end,
     label = "Gear Collection",
     interactable = true,
     box = Box.from(
-      start_x + (button_width + button_spacing) * 2,
+      start_x + button_width + button_spacing,
       viewer_row_y,
       button_width,
       button_height
@@ -124,7 +105,7 @@ function main_menu:enter()
       play_btn,
       Layout.row {
         box = Box.new(Position.zero(), play_button_width, button_height),
-        els = { collection_btn, enemy_viewer_btn, gear_btn },
+        els = { collection_btn, gear_btn },
         flex = {
           align_items = "start",
           direction = "row",
@@ -150,7 +131,6 @@ function main_menu:enter()
   self._buttons = {
     play_btn,
     collection_btn,
-    enemy_viewer_btn,
     gear_btn,
     settings_btn,
   }

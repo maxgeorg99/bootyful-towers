@@ -251,7 +251,7 @@ local Config = class "vibes.config.Config"
 
 function Config:init()
   self.seed = os.time() % (16 ^ 8)
-  self.starting_mode = ModeName.MAIN_MENU
+  self.starting_mode = ModeName.SPLASH_SCREEN
   self.starting_character = CharacterKind.BLACKSMITH
   self.gc_timing = 40
 

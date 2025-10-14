@@ -119,15 +119,16 @@ function Pause:_init_main_menu()
             Save.SaveGame()
             State.levels:reset_level_state() -- Reset everything because I'm paranoid
             self._navigate_to = ModeName.MAIN_MENU
-          end
-
-          if State.mode == ModeName.MAIN_MENU then
-            love.window.close()
-          elseif State.mode ~= ModeName.MAIN_MENU then
+            self:resolve(ActionResult.COMPLETE)
+          elseif State.mode == ModeName.MAIN_MENU then
+            -- Quit immediately without resolving - game is shutting down
+            -- Don't trigger any animations or cleanup that could process events
+            love.event.quit()
+            return  -- Exit immediately, don't resolve or do anything else
+          else
             self._navigate_to = ModeName.MAIN_MENU
+            self:resolve(ActionResult.COMPLETE)
           end
-
-          self:resolve(ActionResult.COMPLETE)
         end,
       },
     },

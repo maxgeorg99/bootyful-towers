@@ -17,18 +17,19 @@ float wavePattern(vec2 st) {
 
 vec4 effect(vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords)
 {
-    // Create distortion in texture coordinates using sine waves instead of noise
-    float distortionAmount = 0.015 * sin(time * 0.5);
+    // Reduced distortion to prevent flickering artifacts
+    float distortionAmount = 0.003 * sin(time * 0.5);  // Reduced from 0.015 to 0.003
     vec2 distortion = vec2(
         sin(texture_coords.x * 15.0 + time * 0.2) * cos(texture_coords.y * 10.0 + time * 0.3) * distortionAmount,
         cos(texture_coords.x * 12.0 - time * 0.15) * sin(texture_coords.y * 14.0 + time * 0.25) * distortionAmount
     );
-    
+
     // Apply distortion to texture coordinates
     vec2 distortedCoords = texture_coords + distortion;
-    
-    // Sample the texture with distorted coordinates
-    vec4 texColor = Texel(texture, distortedCoords) * color;
+
+    // Sample the texture with distorted coordinates with clamping to prevent edge artifacts
+    vec2 clampedCoords = clamp(distortedCoords, 0.0, 1.0);
+    vec4 texColor = Texel(texture, clampedCoords) * color;
     
     // Calculate breathing effect
     float breathingEffect = 0.15 * sin(time * 0.4) + 0.85;

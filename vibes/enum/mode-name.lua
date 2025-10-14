@@ -1,6 +1,7 @@
 ---@diagnostic disable-next-line: duplicate-doc-alias
 ---@enum ModeName
 local ModeName = {
+  SPLASH_SCREEN = "vibes.modes.splash-screen",
   MAIN_MENU = "vibes.modes.main-menu",
   CHARACTER_SELECTION = "vibes.modes.character-selection",
   MAP = "vibes.modes.map",

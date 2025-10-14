@@ -419,7 +419,7 @@ return {
     button_upgrade_default = load_texture "assets/sprites/ui/button-forward-default.png",
     button_upgrade_hovered = load_texture "assets/sprites/ui/button-upgrade-hovered.png",
 
-    title_screen = load_texture "assets/sprites/ui/Title Screen.png",
+    title_screen = load_texture "assets/sprites/ui/New Title Screen.png",
 
     speed_toggle_button = {
       play = load_texture "assets/sprites/ui/speed-toggle-play.png",
@@ -657,6 +657,7 @@ return {
 
     -- Misc
     shadow = load_texture "assets/sprites/enemy-shadow.png",
+    logo = load_texture "assets/logo.png",
 
     -- Mouse
     cursor_up = load_texture "assets/sprites/cursor-up.png",
