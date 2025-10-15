@@ -3,7 +3,8 @@ package.path = package.path .. ";packages/?.lua;packages/?/init.lua"
 -- WHETHER THIS IS A PRODUCTION BUILD!
 PRODUCTION = false
 
-assert = require "luassert"
+-- Note: We use Lua's built-in assert, not luassert
+-- luassert is only needed for testing, the game only uses basic assert(condition, "message")
 
 -- Load globals
 require "vibes.prelude"
