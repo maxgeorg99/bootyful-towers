@@ -29,7 +29,6 @@ jobs:
             -x ".github/*" \
             -x ".claude/*" \
             -x ".idea/*" \
-            -x "packages/luassert/*"
 
       - name: Upload .love package
         uses: actions/upload-artifact@v4
