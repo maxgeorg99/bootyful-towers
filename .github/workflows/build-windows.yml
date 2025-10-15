@@ -1,0 +1,76 @@
+name: Build Windows Release
+
+on:
+  push:
+    branches: [ master ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build-game:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create .love package
+        run: |
+          # Create game.love by zipping all game files (excluding test dependencies)
+          zip -r game.love . \
+            -x "*.git*" \
+            -x "*lovejs*" \
+            -x "*itch-build*" \
+            -x "*.love" \
+            -x "*.zip" \
+            -x ".github/*" \
+            -x ".claude/*" \
+            -x ".idea/*" \
+            -x "packages/luassert/*"
+
+      - name: Upload .love package
+        uses: actions/upload-artifact@v4
+        with:
+          name: game-love-package
+          path: game.love
+
+  build-windows:
+    needs: build-game
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download .love package
+        uses: actions/download-artifact@v4
+        with:
+          name: game-love-package
+
+      - name: Build Windows packages
+        uses: love-actions/love-actions-windows@v1
+        with:
+          love-package: ./game.love
+          product-name: BootyfulTowers
+          icon-path: ./assets/sprites/character-card-blacksmith2.png
+          output-folder: ./build
+
+      - name: Upload Windows build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build
+          path: ./build/*
+
+      - name: Deploy to itch.io
+        if: github.ref == 'refs/heads/master'
+        uses: manleydev/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          CHANNEL: windows
+          ITCH_GAME: bootyful-towers
+          ITCH_USER: ${{ secrets.ITCH_USER }}
+          PACKAGE: ./build
+          VERSION: ${{ github.sha }}
