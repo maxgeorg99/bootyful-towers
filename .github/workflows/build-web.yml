@@ -1,0 +1,122 @@
+name: Build Web Release
+
+on:
+  push:
+    branches: [ master ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build-web:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Clone love.js
+        run: |
+          git clone https://github.com/2dengine/love.js.git lovejs
+
+      - name: Create .love package
+        run: |
+          # Create game.love by zipping all game files (excluding test dependencies)
+          zip -r game.love . \
+            -x "*.git*" \
+            -x "*lovejs*" \
+            -x "*itch-build*" \
+            -x "*.love" \
+            -x "*.zip" \
+            -x ".github/*" \
+            -x ".claude/*" \
+            -x ".idea/*" \
+            -x "packages/luassert/*"
+
+      - name: Prepare itch.io build
+        run: |
+          mkdir -p itch-build
+          cp game.love lovejs/player.js lovejs/style.css itch-build/
+          cp -r lovejs/11.4 itch-build/
+
+      - name: Create index.html
+        run: |
+          cat > itch-build/index.html << 'EOF'
+          <!doctype html>
+          <html lang="en-us">
+            <head>
+              <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+              <meta name="viewport" content="width=device-width,user-scalable=no">
+              <title>Bootyful Towers</title>
+              <link rel="stylesheet" href="style.css">
+              <style>
+                body {
+                  margin: 0;
+                  padding: 0;
+                  background: #000;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  min-height: 100vh;
+                }
+                #canvas {
+                  image-rendering: -moz-crisp-edges;
+                  image-rendering: -webkit-crisp-edges;
+                  image-rendering: pixelated;
+                  image-rendering: crisp-edges;
+                }
+              </style>
+            </head>
+            <body>
+              <canvas id="canvas"></canvas>
+              <div id="spinner" class="pending"></div>
+              <script src="player.js?g=game.love&v=11.4"></script>
+            </body>
+          </html>
+          EOF
+
+      - name: Create itch.io package
+        run: |
+          cd itch-build
+          zip -r ../bootyful-towers-web.zip .
+          cd ..
+
+      - name: Upload web build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-build-itch
+          path: bootyful-towers-web.zip
+
+      - name: Unzip for itch.io deployment
+        if: github.ref == 'refs/heads/master'
+        run: |
+          mkdir -p deploy-web
+          unzip bootyful-towers-web.zip -d deploy-web
+
+      - name: Deploy to itch.io
+        if: github.ref == 'refs/heads/master'
+        uses: manleydev/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          CHANNEL: html5
+          ITCH_GAME: bootyful-towers
+          ITCH_USER: ${{ secrets.ITCH_USER }}
+          PACKAGE: ./deploy-web
+          VERSION: ${{ github.sha }}
+
+      - name: Upload to GitHub Release (if tagged)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            bootyful-towers-web.zip
+            game.love
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

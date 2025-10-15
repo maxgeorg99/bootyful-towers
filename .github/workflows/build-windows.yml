@@ -29,6 +29,7 @@ jobs:
             -x ".github/*" \
             -x ".claude/*" \
             -x ".idea/*" \
+            -x "packages/luassert/*" \
 
       - name: Upload .love package
         uses: actions/upload-artifact@v4
@@ -54,7 +55,6 @@ jobs:
         with:
           love-package: ./game.love
           product-name: BootyfulTowers
-          icon-path: ./assets/sprites/character-card-blacksmith2.png
           output-folder: ./build
 
       - name: Upload Windows build artifacts
