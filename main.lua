@@ -47,7 +47,7 @@ local get_global_systems = function()
 end
 
 local previous_mode = "__unset__"
---- @return vibes.BaseMode
+--- @return vibes.BaseModeupgrade-icon
 local function get_mode()
   local mode_str = State.mode
 

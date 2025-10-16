@@ -144,7 +144,7 @@ function GameState.new()
         },
         starter = {
           deck = require("vibes.character.default-deck")[CharacterKind.MAGE](),
-          energy = 5,
+          energy = 3,
           gold = 100,
         },
       },

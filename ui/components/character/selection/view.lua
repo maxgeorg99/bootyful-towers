@@ -252,6 +252,8 @@ function CharacterSelectionView:_on_character_select(index, character)
 
   self.current_character = character.kind
   State.deck = character.starter.deck
+  State.player.gold = character.starter.gold
+  State.player.energy = character.starter.energy
 
   SoundManager:play_character_theme(character.kind)
   self.details_layout:animate_to_absolute_position(

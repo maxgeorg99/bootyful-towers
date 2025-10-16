@@ -2,6 +2,7 @@ local ButtonElement = require "ui.elements.button"
 -- local ExitShop = require "vibes.action.exit-shop"
 local Img = require "ui.components.img"
 local OpenForge = require "vibes.action.open-forge"
+local OpenCardUpgrade = require "vibes.action.open-card-upgrade"
 local Pack = require "ui.components.shop.pack"
 local PileElement = require "ui.components.pile"
 local PlayerHUD = require "ui.components.player.hud"
@@ -592,38 +593,53 @@ end
 function ShopUI:_add_forge_button()
   self.has_used_forge = false
 
-  -- Forge button constants - positioned left of gear icon
-  local FORGE_BUTTON_SIZE = 250
-  local FORGE_BUTTON_X = 1450
-  local FORGE_BUTTON_Y = 425
+  -- Forge/Upgrade button constants - positioned left of gear icon
+  local BUTTON_SIZE = 250
+  local BUTTON_X = 1450
+  local BUTTON_Y = 425
 
   local ScaledImg = require "ui.components.scaled-img"
 
-  -- local OutlineShader = require "vibes.shader.outline"
-  -- -- Create white border shader for forge button
-  -- local outline_shader = OutlineShader.new {
-  --   outline_width = 2.0,
-  --   outline_color = {1.0, 1.0, 1.0, 1.0}, -- White outline
-  --   texture_size = {FORGE_BUTTON_SIZE, FORGE_BUTTON_SIZE},
-  -- }
-
-  self.forge_button = ScaledImg.new {
-    box = Box.new(
-      Position.new(FORGE_BUTTON_X, FORGE_BUTTON_Y),
-      FORGE_BUTTON_SIZE,
-      FORGE_BUTTON_SIZE
-    ),
-    texture = Asset.sprites.forge_anvil,
-    scale_style = "fit",
-    on_click = function()
-      ActionQueue:add(OpenForge.new {
-        name = "OpenForge",
-        on_success = function() self.has_used_forge = true end,
-      })
-    end,
-    interactable = true,
-    z = Z.SHOP_INTERACTABLES,
-  }
+  -- Check if player is mage - if so, show card upgrade instead of forge
+  if State.selected_character == CharacterKind.MAGE then
+    -- Mage gets card upgrade button with upgrade icon
+    self.forge_button = ScaledImg.new {
+      box = Box.new(
+        Position.new(BUTTON_X, BUTTON_Y),
+        BUTTON_SIZE,
+        BUTTON_SIZE
+      ),
+      texture = Asset.sprites.upgrade_icon,
+      scale_style = "fit",
+      on_click = function()
+        ActionQueue:add(OpenCardUpgrade.new {
+          name = "OpenCardUpgrade",
+          on_success = function() self.has_used_forge = true end,
+        })
+      end,
+      interactable = true,
+      z = Z.SHOP_INTERACTABLES,
+    }
+  else
+    -- Blacksmith and other classes get forge button with anvil icon
+    self.forge_button = ScaledImg.new {
+      box = Box.new(
+        Position.new(BUTTON_X, BUTTON_Y),
+        BUTTON_SIZE,
+        BUTTON_SIZE
+      ),
+      texture = Asset.sprites.forge_anvil,
+      scale_style = "fit",
+      on_click = function()
+        ActionQueue:add(OpenForge.new {
+          name = "OpenForge",
+          on_success = function() self.has_used_forge = true end,
+        })
+      end,
+      interactable = true,
+      z = Z.SHOP_INTERACTABLES,
+    }
+  end
 
   self:append_child(self.forge_button)
 end

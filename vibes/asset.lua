@@ -634,6 +634,9 @@ return {
     forge_furnace = load_texture "assets/sprites/forge/forge_furnace.png",
     forge_background = load_texture "assets/sprites/forge.png",
 
+    -- Card Upgrade (Mage)
+    upgrade_icon = load_texture "assets/sprites/upgrade-icon.png",
+
     -- Armory
     armory_background = load_texture "assets/sprites/armory-background.png",
 
