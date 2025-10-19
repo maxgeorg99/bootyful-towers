@@ -76,17 +76,11 @@ jobs:
           # Verify installation
           ./butler.exe -V
 
-      - name: Login to Butler
+      - name: Deploy to itch.io
         if: github.ref == 'refs/heads/master'
         shell: powershell
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
         run: |
-          # Login using API key
-          ./butler.exe login
-
-      - name: Deploy to itch.io
-        if: github.ref == 'refs/heads/master'
-        shell: powershell
-        run: |
+          # Butler will automatically use BUTLER_API_KEY environment variable
           ./butler.exe push ./build "${{ secrets.ITCH_USER }}/bootyful-towers:windows" --userversion "${{ github.sha }}"
