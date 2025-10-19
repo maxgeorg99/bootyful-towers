@@ -65,7 +65,7 @@ jobs:
 
       - name: Deploy to itch.io
         if: github.ref == 'refs/heads/master'
-        uses: manleydev/butler-publish-itchio-action@master
+        uses: josephbmanley/butler-publish-itchio-action@v1
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: windows
