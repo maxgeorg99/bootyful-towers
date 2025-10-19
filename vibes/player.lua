@@ -8,6 +8,7 @@
 ---@field discards number Player current discards
 ---@field hand_size number Size of hand to draw at beginning of turn
 ---@field block number Player current block (absorbs damage)
+---@field yugioh_investments number Number of Yu-Gi-Oh card investments owned
 local Player = class "vibes.Player"
 
 ---@class vibes.Player.Opts
@@ -18,6 +19,7 @@ local Player = class "vibes.Player"
 ---@field discards number
 ---@field hand_size number
 ---@field block number?
+---@field yugioh_investments number?
 
 ---@param opts vibes.Player.Opts
 function Player:init(opts)
@@ -36,6 +38,7 @@ function Player:init(opts)
   self.discards = opts.discards
   self.hand_size = opts.hand_size
   self.block = opts.block or 0
+  self.yugioh_investments = opts.yugioh_investments or 0
 end
 
 ---@param dmg number
@@ -190,5 +193,37 @@ function Player:heal(amount)
 end
 
 function Player:set_block(block) self.block = block end
+
+---@param cost number Cost of the investment
+---@return boolean Whether the investment was successfully purchased
+function Player:buy_yugioh_investment(cost)
+  if not self:use_gold(cost) then
+    return false
+  end
+
+  self.yugioh_investments = self.yugioh_investments + 1
+  logger.info(
+    "vibes/player.lua: Player bought Yu-Gi-Oh investment. Total investments: "
+      .. self.yugioh_investments
+  )
+
+  return true
+end
+
+---@return number The dividend amount paid out
+function Player:get_yugioh_dividend()
+  local dividend = self.yugioh_investments * 30 -- 30 gold per investment
+  if dividend > 0 then
+    self:gain_gold(dividend)
+    logger.info(
+      "vibes/player.lua: Player received "
+        .. dividend
+        .. " gold from "
+        .. self.yugioh_investments
+        .. " investments"
+    )
+  end
+  return dividend
+end
 
 return Player

@@ -151,7 +151,7 @@ function GameState.new()
       Character.new {
         kind = CharacterKind.FUTURIST,
         name = "Marc",
-        description = "NOT YET IMPLEMENTED",
+        description = "Marc, the futurist invests gold to generate dividends",
         avatar = {
           full = Asset.sprites.futurist_character_full,
           thumbnail = Asset.sprites.futurist_character_full,
@@ -159,8 +159,8 @@ function GameState.new()
         },
         starter = {
           deck = require("vibes.character.default-deck")[CharacterKind.FUTURIST](),
-          energy = 0,
-          gold = 0,
+          energy = 3,
+          gold = 200,
         },
       },
     },

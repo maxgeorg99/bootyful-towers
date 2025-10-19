@@ -637,6 +637,9 @@ return {
     -- Card Upgrade (Mage)
     upgrade_icon = load_texture "assets/sprites/upgrade-icon.png",
 
+    -- Investment (Futurist)
+    invest_icon = load_texture "assets/sprites/invest-icon.png",
+
     -- Armory
     armory_background = load_texture "assets/sprites/armory-background.png",
 

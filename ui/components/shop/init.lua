@@ -547,6 +547,153 @@ function ShopUI:_remove_single_card_from_shop_by_id(card_id)
   logger.info("Removed card %s from shop", shop_card.card.name)
 end
 
+---@class YugiohInvestmentOption
+---@field name string Display name of the investment
+---@field cost number Cost in gold
+---@field description string Description of what it does
+
+function ShopUI:_add_yugioh_investments()
+  -- Define investment options
+  local investment_options = {
+    {
+      name = "Blue-Eyes White Dragon",
+      cost = 50,
+      description = "+10 gold per wave",
+    },
+    {
+      name = "Dark Magician",
+      cost = 50,
+      description = "+10 gold per wave",
+    },
+    {
+      name = "Exodia the Forbidden One",
+      cost = 100,
+      description = "+10 gold per wave (Rare!)",
+    },
+  }
+
+  -- Investment display area
+  local INVESTMENT_START_X = 500
+  local INVESTMENT_Y = 350
+  local INVESTMENT_WIDTH = 350
+  local INVESTMENT_HEIGHT = 150
+  local INVESTMENT_SPACING = 50
+
+  for i, investment in ipairs(investment_options) do
+    local x = INVESTMENT_START_X
+      + (i - 1) * (INVESTMENT_WIDTH + INVESTMENT_SPACING)
+    local y = INVESTMENT_Y
+
+    -- Create investment purchase button
+    local ButtonElement = require "ui.elements.button"
+    local investment_button = ButtonElement.new {
+      box = Box.new(Position.new(x, y), INVESTMENT_WIDTH, INVESTMENT_HEIGHT),
+      label = "",
+      on_click = function() self:_purchase_yugioh_investment(investment) end,
+      kind = "filled",
+    }
+
+    investment_button.z = Z.SHOP_INTERACTABLES
+
+    -- Override the render to show investment details
+    investment_button._custom_render = function(btn)
+      local bx, by, bw, bh = btn:get_geo()
+      local can_afford = State.player.gold >= investment.cost
+
+      -- Draw background
+      if can_afford then
+        love.graphics.setColor(0.2, 0.5, 0.8, 0.9)
+      else
+        love.graphics.setColor(0.3, 0.1, 0.1, 0.7)
+      end
+      love.graphics.rectangle("fill", bx, by, bw, bh, 8, 8)
+
+      -- Draw border
+      love.graphics.setColor(1, 1, 1, 1)
+      love.graphics.setLineWidth(3)
+      love.graphics.rectangle("line", bx, by, bw, bh, 8, 8)
+
+      -- Draw investment name
+      love.graphics.setFont(Asset.fonts.typography.paragraph_sm)
+      love.graphics.setColor(1, 1, 1, 1)
+      love.graphics.printf(
+        investment.name,
+        bx + 10,
+        by + 15,
+        bw - 20,
+        "center"
+      )
+
+      -- Draw description
+      love.graphics.setFont(Asset.fonts.typography.paragraph_sm)
+      love.graphics.setColor(0.9, 0.9, 0.9, 1)
+      love.graphics.printf(
+        investment.description,
+        bx + 10,
+        by + 55,
+        bw - 20,
+        "center"
+      )
+
+      -- Draw cost
+      love.graphics.setFont(Asset.fonts.typography.paragraph_md)
+      if can_afford then
+        love.graphics.setColor(1, 0.9, 0.3, 1)
+      else
+        love.graphics.setColor(1, 0.3, 0.3, 1)
+      end
+      love.graphics.printf(
+        "Cost: " .. investment.cost .. " gold",
+        bx + 10,
+        by + 95,
+        bw - 20,
+        "center"
+      )
+    end
+
+    -- Hook into the button's render
+    local original_render = investment_button._render
+    investment_button._render = function(btn)
+      original_render(btn)
+      investment_button._custom_render(btn)
+    end
+
+    self:append_child(investment_button)
+  end
+
+  -- Add investment info display
+  local info_text = Text.new {
+    function()
+      return "Yu-Gi-Oh Investments: "
+        .. State.player.yugioh_investments
+        .. "\nDividend per wave: "
+        .. (State.player.yugioh_investments * 10)
+        .. " gold"
+    end,
+    box = Box.new(Position.new(500, 600), 1000, 100),
+    font = Asset.fonts.typography.paragraph_lg,
+    text_align = "center",
+  }
+  info_text.z = Z.SHOP_INTERACTABLES
+  self:append_child(info_text)
+end
+
+---@param investment YugiohInvestmentOption
+function ShopUI:_purchase_yugioh_investment(investment)
+  logger.info(
+    "Attempting to purchase Yu-Gi-Oh investment: %s for %d gold",
+    investment.name,
+    investment.cost
+  )
+
+  if State.player:buy_yugioh_investment(investment.cost) then
+    logger.info("Successfully purchased investment: %s", investment.name)
+    UI:create_user_message("Invested in " .. investment.name .. "!")
+  else
+    logger.info("Could not afford investment: %s", investment.name)
+  end
+end
+
 -- Cursor Slop from Begin this might not go here
 ---@param pack vibes.ShopPack
 function ShopUI:_remove_pack_from_shop(pack)
@@ -620,6 +767,46 @@ function ShopUI:_add_forge_button()
       interactable = true,
       z = Z.SHOP_INTERACTABLES,
     }
+  elseif State.selected_character == CharacterKind.FUTURIST then
+    -- Futurist gets invest button with invest icon
+    self.forge_button = ScaledImg.new {
+      box = Box.new(
+        Position.new(BUTTON_X, BUTTON_Y),
+        BUTTON_SIZE,
+        BUTTON_SIZE
+      ),
+      texture = Asset.sprites.invest_icon,
+      scale_style = "fit",
+      on_click = function()
+        if State.player:buy_yugioh_investment(100) then
+          UI:create_user_message(
+            "Investment successful! Total: " .. State.player.yugioh_investments
+          )
+        end
+      end,
+      interactable = true,
+      z = Z.SHOP_INTERACTABLES,
+    }
+
+    -- Add text display for investment info below the button
+    local invest_info_text = Text.new {
+      function()
+        return "Investments: "
+          .. State.player.yugioh_investments
+          .. "\n+"
+          .. (State.player.yugioh_investments * 30)
+          .. " gold/wave"
+      end,
+      box = Box.new(
+        Position.new(BUTTON_X, BUTTON_Y + BUTTON_SIZE + 10),
+        BUTTON_SIZE,
+        60
+      ),
+      font = Asset.fonts.typography.paragraph_md,
+      text_align = "center",
+    }
+    invest_info_text.z = Z.SHOP_INTERACTABLES
+    self:append_child(invest_info_text)
   else
     -- Blacksmith and other classes get forge button with anvil icon
     self.forge_button = ScaledImg.new {
@@ -641,7 +828,9 @@ function ShopUI:_add_forge_button()
     }
   end
 
-  self:append_child(self.forge_button)
+  if self.forge_button then
+    self:append_child(self.forge_button)
+  end
 end
 
 function ShopUI:_add_gear_icon()
@@ -770,13 +959,21 @@ end
 function ShopUI:_render() end
 
 function ShopUI:_update(dt)
-  self:_update_reroll_button_state()
-  self:_update_single_card_reroll_button_state()
+  -- Only update reroll buttons if they exist (not for Futurist)
+  if self.reroll_button then
+    self:_update_reroll_button_state()
+  end
+  if self.single_card_reroll_button then
+    self:_update_single_card_reroll_button_state()
+  end
 
-  if self.has_used_forge then
-    self.forge_button:set_interactable(false)
-  else
-    self.forge_button:set_interactable(true)
+  -- Only update forge button if it exists (nil for Futurist)
+  if self.forge_button then
+    if self.has_used_forge then
+      self.forge_button:set_interactable(false)
+    else
+      self.forge_button:set_interactable(true)
+    end
   end
 end
 

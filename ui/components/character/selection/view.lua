@@ -153,15 +153,10 @@ function CharacterSelectionView:init(opts)
         avatar = character.avatar,
         selected = idx == 1,
         callback = function()
-          if character.kind == CharacterKind.FUTURIST then
-            self.action_button.label = "Coming Soon"
-            self.action_button:set_interactable(false)
-            self.action_button:set_opacity(0.5)
-          else
-            self.action_button.label = "New Game"
-            self.action_button:set_interactable(true)
-            self.action_button:set_opacity(1)
-          end
+          -- All characters are now playable
+          self.action_button.label = "New Game"
+          self.action_button:set_interactable(true)
+          self.action_button:set_opacity(1)
 
           self:_on_character_select(idx, character)
         end,

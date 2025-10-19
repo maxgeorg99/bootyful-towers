@@ -99,6 +99,25 @@ default_decks[CharacterKind.MAGE] = function()
   return deck
 end
 
-default_decks[CharacterKind.FUTURIST] = function() return Deck.new() end
+default_decks[CharacterKind.FUTURIST] = function()
+  local deck = Deck.new()
+
+  -- Basic towers for Marc the Futurist
+  local archer = require "vibes.card.card-tower-archer"
+  deck:add_card(archer.new { rarity = Rarity.COMMON })
+  deck:add_card(archer.new { rarity = Rarity.COMMON })
+
+  -- Money-themed cards
+  local GoldenHarvest = require "vibes.card.aura.golden-harvest"
+  deck:add_card(GoldenHarvest.new())
+  deck:add_card(GoldenHarvest.new())
+
+  -- Basic enhancements
+  deck:add_card(DamageCard.new { rarity = Rarity.UNCOMMON })
+  deck:add_card(RangeCard.new { rarity = Rarity.UNCOMMON })
+  deck:add_card(AttackSpeedCard.new { rarity = Rarity.UNCOMMON })
+
+  return deck
+end
 
 return default_decks

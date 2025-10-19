@@ -38,7 +38,7 @@ function OpenCardUpgrade:start()
     end,
     on_cancel = function()
       -- Refund the gold if cancelled
-      State.player:add_gold(100)
+      State.player:gain_gold(100)
       self.gold_spent = false
       self:resolve(ActionResult.CANCEL)
     end,
@@ -53,7 +53,7 @@ function OpenCardUpgrade:update()
   if love.keyboard.isDown "escape" then
     -- Refund gold if it was spent
     if self.gold_spent then
-      State.player:add_gold(100)
+      State.player:gain_gold(100)
       self.gold_spent = false
     end
     self:resolve(ActionResult.CANCEL)

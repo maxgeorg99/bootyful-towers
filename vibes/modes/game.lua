@@ -293,6 +293,14 @@ function GameMode:start_wave()
     function(item) item.hooks.before_wave_starts(item, wave) end
   )
 
+  -- Pay out investment dividends for Futurist character
+  if State.selected_character == CharacterKind.FUTURIST then
+    local dividend = State.player:get_yugioh_dividend()
+    if dividend > 0 then
+      UI:create_user_message("Investment Dividends: +" .. dividend .. " gold!")
+    end
+  end
+
   self.lifecycle = RoundLifecycle.ENEMIES_SPAWNING
 end
 
