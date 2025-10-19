@@ -63,13 +63,30 @@ jobs:
           name: windows-build
           path: ./build/*
 
+      - name: Install Butler
+        if: github.ref == 'refs/heads/master'
+        shell: powershell
+        run: |
+          # Download butler for Windows
+          Invoke-WebRequest -Uri "https://broth.itch.ovh/butler/windows-amd64/LATEST/archive/default" -OutFile "butler.zip"
+          
+          # Extract butler
+          Expand-Archive -Path "butler.zip" -DestinationPath "." -Force
+          
+          # Verify installation
+          ./butler.exe -V
+
+      - name: Login to Butler
+        if: github.ref == 'refs/heads/master'
+        shell: powershell
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
+        run: |
+          # Login using API key
+          ./butler.exe login
+
       - name: Deploy to itch.io
         if: github.ref == 'refs/heads/master'
-        uses: josephbmanley/butler-publish-itchio-action@v1.0.3
-        env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: windows
-          ITCH_GAME: bootyful-towers
-          ITCH_USER: ${{ secrets.ITCH_USER }}
-          PACKAGE: ./build
-          VERSION: ${{ github.sha }}
+        shell: powershell
+        run: |
+          ./butler.exe push ./build "${{ secrets.ITCH_USER }}/bootyful-towers:windows" --userversion "${{ github.sha }}"
