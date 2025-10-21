@@ -1,0 +1,88 @@
+name: Build macOS Release
+
+on:
+  push:
+    branches: [ master ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build-game:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create .love package
+        run: |
+          # Create game.love by zipping all game files (excluding test dependencies)
+          zip -r game.love . \
+            -x "*.git*" \
+            -x "*lovejs*" \
+            -x "*itch-build*" \
+            -x "*.love" \
+            -x "*.zip" \
+            -x ".github/*" \
+            -x ".claude/*" \
+            -x ".idea/*" \
+            -x "packages/luassert/*"
+
+      - name: Upload .love package
+        uses: actions/upload-artifact@v4
+        with:
+          name: game-love-package-macos
+          path: game.love
+
+  build-macos:
+    needs: build-game
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download .love package
+        uses: actions/download-artifact@v4
+        with:
+          name: game-love-package-macos
+
+      - name: Build macOS packages
+        uses: love-actions/love-actions-macos-portable@v1
+        with:
+          love-package: ./game.love
+          product-name: BootyfulTowers
+          output-folder: ./build
+          bundle-id: com.bootyful.towers
+
+      - name: Upload macOS build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-build
+          path: ./build/*
+
+      - name: Install Butler
+        if: github.ref == 'refs/heads/master'
+        run: |
+          # Download butler for macOS
+          curl -L -o butler.zip https://broth.itch.ovh/butler/darwin-amd64/LATEST/archive/default
+
+          # Extract butler
+          unzip butler.zip
+
+          # Make butler executable
+          chmod +x butler
+
+          # Verify installation
+          ./butler -V
+
+      - name: Deploy to itch.io
+        if: github.ref == 'refs/heads/master'
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
+        run: |
+          # Butler will automatically use BUTLER_API_KEY environment variable
+          ./butler push ./build "${{ secrets.ITCH_USER }}/bootyful-towers:macos" --userversion "${{ github.sha }}"
