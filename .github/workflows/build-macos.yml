@@ -51,19 +51,30 @@ jobs:
           name: game-love-package-macos
 
       - name: Build macOS packages
-        uses: love-actions/love-actions-macos-portable@v1
-        with:
-          love-package: ./game.love
-          product-name: BootyfulTowers
-          output-folder: ./build
-          bundle-id: com.bootyful.towers
-          apple-development-base64: ''
-          api-key: ''
-          api-key-id: ''
-          api-issuer-id: ''
-          team-id: ''
-          apple-id: ''
-          disable-signing: 'true'
+        run: |
+          # Download LÖVE for macOS
+          curl -L -o love-macos.zip https://github.com/love2d/love/releases/download/11.5/love-11.5-macos.zip
+
+          # Extract LÖVE
+          unzip love-macos.zip
+
+          # Create build directory
+          mkdir -p ./build
+
+          # Create the .app bundle
+          cp -r love.app ./build/BootyfulTowers.app
+
+          # Copy game.love into the app bundle
+          cp game.love ./build/BootyfulTowers.app/Contents/Resources/
+
+          # Update Info.plist with game information
+          /usr/libexec/PlistBuddy -c "Set :CFBundleName BootyfulTowers" ./build/BootyfulTowers.app/Contents/Info.plist
+          /usr/libexec/PlistBuddy -c "Set :CFBundleIdentifier com.bootyful.towers" ./build/BootyfulTowers.app/Contents/Info.plist
+
+          # Create a zip of the app for distribution
+          cd ./build
+          zip -r BootyfulTowers-macos.zip BootyfulTowers.app
+          cd ..
 
       - name: Upload macOS build artifacts
         uses: actions/upload-artifact@v4
@@ -92,4 +103,4 @@ jobs:
           BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
         run: |
           # Butler will automatically use BUTLER_API_KEY environment variable
-          ./butler push ./build "${{ secrets.ITCH_USER }}/bootyful-towers:macos" --userversion "${{ github.sha }}"
+          ./butler push ./build/BootyfulTowers-macos.zip "${{ secrets.ITCH_USER }}/bootyful-towers:macos" --userversion "${{ github.sha }}"
