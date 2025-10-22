@@ -57,7 +57,13 @@ jobs:
           product-name: BootyfulTowers
           output-folder: ./build
           bundle-id: com.bootyful.towers
-          disable-signing: true
+          apple-development-base64: ''
+          api-key: ''
+          api-key-id: ''
+          api-issuer-id: ''
+          team-id: ''
+          apple-id: ''
+          disable-signing: 'true'
 
       - name: Upload macOS build artifacts
         uses: actions/upload-artifact@v4
