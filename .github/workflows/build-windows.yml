@@ -56,6 +56,7 @@ jobs:
           love-package: ./game.love
           product-name: BootyfulTowers
           output-folder: ./build
+          app-id: ca5ff05e-fe95-4679-918c-898be09b99c4
           installer-languages: en_US
           company-name: "Bootyful Games"
           product-website: "https://github.com/${{ github.repository }}"
