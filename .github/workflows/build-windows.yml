@@ -50,18 +50,28 @@ jobs:
         with:
           name: game-love-package
 
-      - name: Build Windows packages
+      - name: Build Windows installer
         uses: love-actions/love-actions-windows@v1
         with:
           love-package: ./game.love
           product-name: BootyfulTowers
           output-folder: ./build
+          installer-languages: en_US
+          company-name: "Bootyful Games"
+          product-website: "https://github.com/${{ github.repository }}"
+          file-description: "Bootyful Towers - A Tower Defense Game"
 
-      - name: Upload Windows build artifacts
+      - name: Upload Windows installer
         uses: actions/upload-artifact@v4
         with:
-          name: windows-build
-          path: ./build/*
+          name: windows-installer
+          path: ./build/*-installer.exe
+
+      - name: Upload Windows portable
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-portable
+          path: ./build/*.zip
 
       - name: Install Butler
         if: github.ref == 'refs/heads/master'

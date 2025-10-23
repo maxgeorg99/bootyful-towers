@@ -1,0 +1,24 @@
+# Build artifacts
+*.love
+*.zip
+*.exe
+build/
+dist/
+itch-build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test dependencies
+packages/
+
+# Temporary files
+lovejs-temp/
+lovejs/
