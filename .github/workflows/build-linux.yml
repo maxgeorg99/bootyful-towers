@@ -59,6 +59,7 @@ jobs:
           app-id: com.bootyful.towers
           description: "Bootyful Towers - A Tower Defense Game"
           version-string: "1.0.0"
+          icon-path: ./icon.png
 
       - name: Upload Linux AppImage
         uses: actions/upload-artifact@v4
