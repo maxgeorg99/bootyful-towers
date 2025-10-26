@@ -2,11 +2,11 @@ name: Build Windows Release
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
     tags:
-      - 'v*'
+      - "v*"
   pull_request:
-    branches: [ master ]
+    branches: [master]
   workflow_dispatch:
 
 jobs:
@@ -14,80 +14,107 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-          - name: Checkout code
-            uses: actions/checkout@v4
-    
-          - name: Download .love package
-            uses: actions/download-artifact@v4
-            with:
-              name: game-love-package
-    
-          - name: Build Windows installer
-            uses: love-actions/love-actions-windows@v1
-            with:
-              love-package: ./game.love
-              product-name: BootyfulTowers
-              output-folder: ./build
-              app-id: ca5ff05e-fe95-4679-918c-898be09b99c4
-              company-name: "Bootyful Games"
-              product-website: "https://github.com/${{ github.repository }}"
-              file-description: "Bootyful Towers - A Tower Defense Game"
-    
-          # --- ✅ Add missing Visual C++ runtime DLLs here ---
-          - name: Add Visual C++ Runtime DLLs
-            shell: powershell
-            run: |
-              Write-Host "Downloading Visual C++ Redistributable package..."
-              $vcRedistUrl = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
-              Invoke-WebRequest -Uri $vcRedistUrl -OutFile "vc_redist.x86.exe"
-    
-              Write-Host "Extracting runtime DLLs..."
-              Start-Process -FilePath ".\vc_redist.x86.exe" -ArgumentList "/quiet", "/norestart", "/install" -Wait
-    
-              # Copy the important runtime DLLs if they exist
-              $dlls = @(
-                "msvcp140.dll",
-                "vcruntime140.dll",
-                "vcruntime140_1.dll",
-                "ucrtbase.dll"
-              )
-    
-              $windowsSystem = "$env:windir\System32"
-              foreach ($dll in $dlls) {
-                $source = Join-Path $windowsSystem $dll
-                $target = Join-Path ".\build" $dll
-                if (Test-Path $source) {
-                  Copy-Item $source $target -Force
-                  Write-Host "✅ Copied $dll"
-                } else {
-                  Write-Warning "⚠️ Could not find $dll"
-                }
-              }
-    
-          - name: Upload Windows installer
-            uses: actions/upload-artifact@v4
-            with:
-              name: windows-installer
-              path: ./build/*-installer.exe
-    
-          - name: Upload Windows portable
-            uses: actions/upload-artifact@v4
-            with:
-              name: windows-portable
-              path: ./build/*.zip
-    
-          - name: Install Butler
-            if: github.ref == 'refs/heads/master'
-            shell: powershell
-            run: |
-              Invoke-WebRequest -Uri "https://broth.itch.ovh/butler/windows-amd64/LATEST/archive/default" -OutFile "butler.zip"
-              Expand-Archive -Path "butler.zip" -DestinationPath "." -Force
-              ./butler.exe -V
-    
-          - name: Deploy to itch.io
-            if: github.ref == 'refs/heads/master'
-            shell: powershell
-            env:
-              BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
-            run: |
-              ./butler.exe push ./build "${{ secrets.ITCH_USER }}/bootyful-towers:windows" --userversion "${{ github.sha }}"
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create .love package
+        run: |
+          # Create game.love by zipping all game files (excluding test dependencies)
+          zip -r game.love . \
+            -x "*.git*" \
+            -x "*lovejs*" \
+            -x "*itch-build*" \
+            -x "*.love" \
+            -x "*.zip" \
+            -x ".github/*" \
+            -x ".claude/*" \
+            -x ".idea/*" \
+            -x "packages/luassert/*"
+
+      - name: Upload .love package
+        uses: actions/upload-artifact@v4
+        with:
+          name: game-love-package
+          path: game.love
+
+  build-windows:
+    needs: build-game
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download .love package
+        uses: actions/download-artifact@v4
+        with:
+          name: game-love-package
+
+      - name: Build Windows installer
+        uses: love-actions/love-actions-windows@v1
+        with:
+          love-package: ./game.love
+          product-name: BootyfulTowers
+          output-folder: ./build
+          app-id: ca5ff05e-fe95-4679-918c-898be09b99c4
+          company-name: "Bootyful Games"
+          product-website: "https://github.com/${{ github.repository }}"
+          file-description: "Bootyful Towers - A Tower Defense Game"
+
+      # ✅ Add missing MSVC runtime DLLs (Visual C++ redistributable)
+      - name: Add Visual C++ Runtime DLLs
+        shell: powershell
+        run: |
+          Write-Host "Downloading Visual C++ Redistributable package..."
+          $vcRedistUrl = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
+          Invoke-WebRequest -Uri $vcRedistUrl -OutFile "vc_redist.x86.exe"
+
+          Write-Host "Installing redistributable (quiet mode)..."
+          Start-Process -FilePath ".\vc_redist.x86.exe" -ArgumentList "/quiet", "/norestart", "/install" -Wait
+
+          Write-Host "Copying runtime DLLs into build folder..."
+          $dlls = @(
+            "msvcp140.dll",
+            "vcruntime140.dll",
+            "vcruntime140_1.dll",
+            "ucrtbase.dll"
+          )
+          $windowsSystem = "$env:windir\System32"
+          foreach ($dll in $dlls) {
+            $src = Join-Path $windowsSystem $dll
+            $dst = Join-Path ".\build" $dll
+            if (Test-Path $src) {
+              Copy-Item $src $dst -Force
+              Write-Host "✅ Copied $dll"
+            } else {
+              Write-Warning "⚠️ Missing $dll on runner"
+            }
+          }
+
+      - name: Upload Windows installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-installer
+          path: ./build/*-installer.exe
+
+      - name: Upload Windows portable
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-portable
+          path: ./build/*.zip
+
+      - name: Install Butler
+        if: github.ref == 'refs/heads/master'
+        shell: powershell
+        run: |
+          Invoke-WebRequest -Uri "https://broth.itch.ovh/butler/windows-amd64/LATEST/archive/default" -OutFile "butler.zip"
+          Expand-Archive -Path "butler.zip" -DestinationPath "." -Force
+          ./butler.exe -V
+
+      - name: Deploy to itch.io
+        if: github.ref == 'refs/heads/master'
+        shell: powershell
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
+        run: |
+          ./butler.exe push ./build "${{ secrets.ITCH_USER }}/bootyful-towers:windows" --userversion "${{ github.sha }}"
