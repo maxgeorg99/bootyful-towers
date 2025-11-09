@@ -91,6 +91,12 @@ jobs:
             }
           }
 
+      - name: List build artifacts
+        shell: powershell
+        run: |
+          Write-Host "Contents of build folder:"
+          Get-ChildItem -Path ./build | Format-Table Name, Length
+
       - name: Upload Windows installer
         uses: actions/upload-artifact@v4
         with:
@@ -111,10 +117,18 @@ jobs:
           Expand-Archive -Path "butler.zip" -DestinationPath "." -Force
           ./butler.exe -V
 
-      - name: Deploy to itch.io
+      - name: Deploy installer to itch.io
         if: github.ref == 'refs/heads/master'
         shell: powershell
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
         run: |
-          ./butler.exe push ./build "${{ secrets.ITCH_USER }}/bootyful-towers:windows" --userversion "${{ github.sha }}"
+          # Find the installer executable
+          $installer = Get-ChildItem -Path ./build -Filter "*-installer.exe" | Select-Object -First 1
+          if ($installer) {
+            Write-Host "Uploading installer: $($installer.FullName)"
+            ./butler.exe push $installer.FullName "${{ secrets.ITCH_USER }}/bootyful-towers:windows" --userversion "${{ github.sha }}"
+          } else {
+            Write-Error "No installer found in build folder!"
+            exit 1
+          }
